@@ -1,0 +1,91 @@
+/* ==========================================
+   Merlay Limited - Design System & Defaults
+   ========================================== */
+
+:root {
+  /* Brand Colors */
+  --color-primary: #1e3a8a; /* Deep Steel Blue (Trust, Industry) */
+  --color-primary-dark: #1e293b; /* Dark Charcoal / Slate */
+  --color-accent: #f59e0b; /* Warm Amber / Gold (Factory Deals & Highlights) */
+  --color-accent-hover: #d97706;
+
+  /* Neutral Shades */
+  --color-bg: #f8fafc; /* Clean light grey background */
+  --color-surface: #ffffff; /* Card and container background */
+  --color-text: #0f172a; /* High contrast dark text */
+  --color-text-muted: #64748b; /* Secondary / muted text */
+  --color-border: #e2e8f0; /* Subtle borders and dividers */
+
+  /* Typography */
+  --font-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+
+  /* Spacing & Layout */
+  --container-max: 1200px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+}
+
+/* ==========================================
+   CSS Reset & Global Defaults
+   ========================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Images & Media Defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Links & Buttons */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Utility Container */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
