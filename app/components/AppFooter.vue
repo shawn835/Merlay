@@ -8,7 +8,7 @@
         </div>
         <p class="footer-desc">
           Your trusted partner for premium quality normal corrugated and box
-          profile glossy iron sheets at unbeatable factory and retail prices.
+          profile glossy iron sheets at unbeatable prices.
         </p>
       </div>
 

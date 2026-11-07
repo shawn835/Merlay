@@ -48,7 +48,7 @@ export const products = [
     name: "Normal Corrugated",
     category: "Corrugated Profiles",
     finish: "Glossy",
-    images: ["/images/Corrugated-1.jpeg", "/images/Corrugated-2.jpeg"],
+    images: ["/images/Corrugated-1.jpeg", "/images/Corrugated-2.webp"],
     pricing: {
       unit: "meter",
       factory: {
@@ -66,7 +66,7 @@ export const products = [
     name: "Box Profile",
     category: "Box Profiles",
     finish: "Glossy",
-    images: ["/images/Box-1.jpeg", "/images/Box-2.jpeg", "/images/Box-3.jpeg"],
+    images: ["/images/Box-1.jpeg", "/images/Box-2.webp", "/images/Box-3.jpeg"],
     pricing: {
       unit: "meter",
       factory: {

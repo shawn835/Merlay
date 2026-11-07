@@ -2,7 +2,9 @@
   <div class="product-card">
     <!-- Image Gallery Carousel Wrapper -->
     <div class="card-image-wrapper">
-      <img :src="currentImage" :alt="product.name" class="product-image" />
+      <NuxtLink :to="`/products/${slugify(product.name)}`">
+        <img :src="currentImage" :alt="product.name" class="product-image" />
+      </NuxtLink>
 
       <!-- Badge (Conditional) -->
       <div class="card-badge" v-if="showBadge && badge">{{ badge }}</div>
@@ -38,37 +40,19 @@
     <div class="card-content">
       <div class="card-header">
         <span class="product-category">{{ product.category }}</span>
-        <h3 class="product-title">{{ product.name }}</h3>
+        <NuxtLink
+          :to="`/products/${slugify(product.name)}`"
+          class="product-title-link"
+        >
+          <h3 class="product-title">{{ product.name }}</h3>
+        </NuxtLink>
       </div>
 
       <div class="pricing-table">
-        <!-- Factory Price Row -->
-        <div class="price-row factory-price">
-          <div class="price-label">
-            <span class="tag">Factory Price</span>
-            <span class="meter">Per {{ product.pricing.unit }}</span>
-          </div>
-          <div class="price-values">
-            <div class="gauge-item">
-              <span class="gauge">30G</span>
-              <span class="amount"
-                >Ksh {{ product.pricing.factory["30g"] }}</span
-              >
-            </div>
-            <div class="divider"></div>
-            <div class="gauge-item">
-              <span class="gauge">Gauge 28</span>
-              <span class="amount"
-                >Ksh {{ product.pricing.factory["28g"] }}</span
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Retail Price Row -->
+        <!-- Retail Price Row Only -->
         <div class="price-row retail-price">
           <div class="price-label">
-            <span class="tag">Retail Price</span>
+            <span class="tag">Price</span>
             <span class="meter">Per {{ product.pricing.unit }}</span>
           </div>
           <div class="price-values">
@@ -98,6 +82,7 @@
 
 <script setup>
 import { ref, computed } from "vue";
+import { slugify } from "../utils/slugify.js";
 
 const props = defineProps({
   product: {
@@ -282,6 +267,8 @@ const formatRetail = (retailObj) => {
   font-weight: 700;
   color: var(--color-primary-dark);
   letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: color var(--transition-fast);
 }
 
 .pricing-table {
@@ -298,10 +285,6 @@ const formatRetail = (retailObj) => {
   flex-direction: column;
   gap: 0.6rem;
   border: 1px solid var(--color-border);
-}
-
-.price-row.factory-price {
-  border-left: 4px solid var(--color-primary);
 }
 
 .price-row.retail-price {

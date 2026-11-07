@@ -14,6 +14,9 @@
         <NuxtLink to="/products" class="nav-link" @click="closeMenu"
           >Products & Prices</NuxtLink
         >
+        <NuxtLink to="/containers" class="nav-link" @click="closeMenu"
+          >containers</NuxtLink
+        >
         <NuxtLink to="/about" class="nav-link" @click="closeMenu"
           >About Us</NuxtLink
         >

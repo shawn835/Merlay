@@ -33,8 +33,8 @@
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
-            <span class="stat-number">Ksh 410+</span>
-            <span class="stat-label">Factory Rates per Meter</span>
+            <span class="stat-number">Ksh 560+</span>
+            <span class="stat-label">Price Rates per Meter</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
@@ -57,16 +57,17 @@
           </div>
           <div class="price-preview">
             <div class="preview-row">
-              <span>30G Factory Price</span>
-              <strong>Ksh 410 / m</strong>
+              <span>30G Price</span>
+              <strong>Ksh 460 / m</strong>
             </div>
             <div class="preview-row">
-              <span>Gauge 28 Factory Price</span>
-              <strong>Ksh 560 / m</strong>
+              <span>Gauge 28 Price</span>
+              <strong>Ksh 620 / m</strong>
             </div>
           </div>
           <NuxtLink to="/products" class="visual-link">
-            Check full pricing structure <LucideChevronRight :size="16" />
+            Check full pricing structure
+            <LucideIcon name="ChevronRight" :size="16" />
           </NuxtLink>
         </div>
       </div>

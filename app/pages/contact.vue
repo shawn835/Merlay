@@ -61,17 +61,22 @@
             </a>
           </div>
 
+          
           <!-- Location Card -->
           <div class="info-card">
             <div class="card-icon">
-              <LucideIcon name="MapPin" size="24" />
+              <lucideIcon name="MapPin" size="24" />
             </div>
             <h3>Depot Location</h3>
             <p>
               Visit our yard to view product samples and pick up your roofing
               materials.
             </p>
-            <span class="card-static-text"> Main Office & Depot, Kenya </span>
+            <span class="card-static-text">
+              Information House<br />
+              Mfangano Street, 3409-00100<br />
+              Nairobi, Kenya
+            </span>
           </div>
 
           <!-- Operating Hours Card -->
@@ -165,9 +170,9 @@
             <p>Easy access for transport vehicles and client pickup.</p>
           </div>
           <div class="map-placeholder">
-            <LucideIcon name="Map" size="24" />
+            <Icon name="lucide:map" size="48" />
             <span>Merlay Limited Depot</span>
-            <p>Contact us via phone or WhatsApp for precise GPS coordinates.</p>
+            <p>Information House, Mfangano Street, Nairobi</p>
           </div>
           <div class="quick-whatsapp-banner">
             <div class="banner-text">

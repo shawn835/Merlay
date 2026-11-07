@@ -4,10 +4,10 @@
     <section class="page-header">
       <div class="container header-container">
         <div class="header-tag">
-          <Icon name="lucide:package" size="16" />
+          <LucideIcon name="Package" size="16" />
           <span>Merlay Limited Catalog</span>
         </div>
-        <h1 class="page-title">Iron Sheets & Factory Pricing</h1>
+        <h1 class="page-title">Iron Sheets & Pricing</h1>
         <p class="page-subtitle">
           Explore our complete catalog of tile profiles, corrugated, and box
           profile roofing sheets. Available in precise Gauge 30 and heavy-duty
@@ -99,9 +99,22 @@
 </template>
 
 <script setup>
-import { products } from "../../data/products.js";
+import { products } from "../../../data/products.js";
 const config = useRuntimeConfig();
 const whatsappUrl = `https://wa.me/${config.public.companyPhone}?text=${encodeURIComponent(config.public.whatsappDefaultMsg)}`;
+
+useSeoMeta({
+  title: "Roofing Iron Sheets Catalog & Retail Prices | Merlay Limited",
+  description:
+    "Explore our complete catalog of Normal Corrugated, Box Profile, Roman Tile, and Versatile iron sheets in Gauge 30 and Gauge 28 with competitive retail pricing.",
+  ogTitle: "Roofing Iron Sheets Catalog & Retail Prices | Merlay Limited",
+  ogDescription:
+    "Browse our durable glossy finish iron sheets in 30G and 28G. Custom cutting available.",
+});
+
+useHead({
+  link: [{ rel: "icon", type: "image/png", href: "/images/favicon.png" }],
+});
 </script>
 
 <style scoped>

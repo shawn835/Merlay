@@ -22,7 +22,7 @@
           <div class="icon-box">
             <LucideIcon name="CheckCircle2" :size="20" />
           </div>
-          <span>Factory & Retail Pricing</span>
+          <span>perfect pricing</span>
         </div>
         <div class="highlight-item">
           <div class="icon-box">
