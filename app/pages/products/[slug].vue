@@ -282,7 +282,7 @@ const formatRetail = (retailObj) => {
 
 const whatsappUrl = computed(() => {
   const name = product.value ? product.value.name : "Iron Sheets";
-  return `https://wa.me/${config.public.companyPhoneRaw}?text=${encodeURIComponent(`Hello Merlay Limited, I would like to inquire about pricing and availability for ${name}.`)}`;
+  return `https://wa.me/${config.public.companyPhone}?text=${encodeURIComponent(`Hello Merlay Limited, I would like to inquire about pricing and availability for ${name}.`)}`;
 });
 </script>
 
