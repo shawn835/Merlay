@@ -159,7 +159,7 @@
 
               <!-- Pricing Footer -->
               <div class="card-pricing-footer">
-                <div class="price-display">
+                <!-- <div class="price-display">
                   <div class="price-info-group">
                     <span class="price-label">Estimated Base Price</span>
                     <span class="price-note"
@@ -170,7 +170,7 @@
                     >Ksh {{ container.pricing.ksh.toLocaleString() }}
                     <small>/ set</small></span
                   >
-                </div>
+                </div> -->
                 <NuxtLink to="/contact" class="btn-order"
                   >Inquire / Order Set</NuxtLink
                 >
@@ -247,8 +247,6 @@ useSeoMeta({
     "Durable, quick-assembly detachable container houses with internal column drainage and custom configurations.",
   ogType: "website",
 });
-
-
 </script>
 
 <style scoped>
